@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Lato-Light;
+    src: url(..//assets/fonts/Lato-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: Lato-Regular;
+    src: url(..//assets/fonts/Lato-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Lato-Bold;
+    src: url(..//assets/fonts/Lato-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Lato-Black;
+    src: url(..//assets/fonts/Lato-Black.ttf);
+  }
+  
+  body{
+      font-family:'Lato',sans-serif;
+      font-size: 10px;
+      margin:0px;
+      padding:0px;
+     
+  }
+  
+  .wrapper{
+      max-width:1020px;
+      margin:auto;
+      float:center;
+      width:100%;
+  }
+  
+  .header {
+      height:89px;
+      background-color:#2d303a;
+      border-bottom:6px solid #323746; 
+      display:flex;
+      justify-content: space-between;
+  }	
+  
+  .header__logo h1  {
+      margin:41px 0 0 40px;
+      text-align:left;
+      color:#ffffff;
+      text-transform:uppercase;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 6px;
+      letter-spacing: -0.03rem;
+  }
+  
+  header h1 span {
+      color:#f06c64;
+  }
+  
+  .header__navigation {
+      width: 411px;
+      margin: 34px 40px 0 0;
+  }
+  .header__navigation ul {
+      display:flex;
+      justify-content: space-between;
+      list-style:none; 
+  }
+  
+  .header__navigation ul li a {
+      font-size: 12px;
+      line-height:6px;
+      color: #ffffff;
+      text-decoration:none;
+      font-weight: 700;
+      text-align: left;
+      text-transform:uppercase;
+      letter-spacing: -0.01rem;
+  }
+  
+  .header__navigation ul li a span {
+      color: #494e62;
+      padding-left:14px;
+  }
+  
+  .header__navigation ul li a:hover, .active {
+      color:#f06c64 !important;
+  }
+  
+  .slider {
+      display:flex;
+      justify-content: space-between;
+      height: 594px;
+      background-color: #f06c64;
+      border-bottom:6px solid #ea676b; 
+      position: relative;
+  }
+  
+  .slider_btn_left {
+      width: 30px;
+          height: 30px;	
+      margin:280px 0 0 36px;
+      border: none;
+      background: none;
+      display:flex;
+      justify-content: space-between;
+  }
+  
+  .slider_btn_left:hover {
+         background-color: #ffffff;
+  }
+  
+  .iphone_vertical .iphone_vertical_layer1 {
+      position: absolute; 
+      top:53px;
+      left:112px;
+      display:flex;
+      justify-content: space-between;
+      z-index: 1; 
+  }
+  
+  .iphone_vertical .iphone_vertical_layer2 {
+      position: absolute; 
+      top:53px;
+      left:112px;
+      display:flex;
+      justify-content: space-between;
+      z-index: 2; 
+  }
+  
+  .iphone_horisontal .iphone_horisontal_layer1 {
+      position: absolute;
+      top:52px;
+      right:233px; 
+      display:flex;
+      justify-content: space-between;
+      z-index: 3;
+      transform: scale(1, -1) rotate(90deg);
+  }
+  
+  .iphone_horisontal .iphone_horisontal_layer2 {
+      position: absolute;
+      top:174px;
+      right:137px; 
+      display:flex;
+      justify-content: space-between;
+      z-index: 4;
+  }
+  
+  .slider_btn_right {	
+      width: 30px;
+          height: 30px;	
+      margin:280px 34px 0 0;
+      border: none;
+      background: none;
+      display:flex;
+      justify-content: space-between;
+  }
+  
+  .slider_btn_right:hover {
+      background-color: #ffffff;
+  }
+  
+  .services {
+      padding-top: 0px;
+      height: 494px;
+      background-color: #f2f2f2;
+      border-bottom:6px solid #ffffff; 
+      
+  }
+  
+  .services_our {
+      padding: 37px 0 0 40px;
+      font-size: 30px;
+      line-height: 0px;
+      color: #666d89;
+      font-weight: 900;
+      text-align: left;
+  }
+      
+  .services_p {
+      margin-top:-4px;
+      padding-left: 40px;
+      width: 940px;
+      height: 57px;
+      font-size: 18px;
+      line-height: 30px;
+      color: #767e9e;
+      font-weight: 300;
+      text-align: left;
+      word-spacing: 1.1px;
+  
+  }
+  
+  .services_p span {
+      word-spacing: 0.01px;
+  }
+  
+  .services .conteiner {
+       display:flex;
+      flex-wrap: wrap;
+  
+  
+  align-content: space-around;
+  }
+  
+  .services .conteiner h4 {
+      font-size: 18px;
+      line-height: 18px;
+      color: #666d89;
+      font-weight: 900;
+      text-align: left;
+      margin-top: -62px;
+      margin-left:119px;
+  }
+  
+  .services .conteiner img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+           width: 61px;
+          height: 61px;
+        margin-top: 50px;
+      margin-left:40px;;
+  }
+  
+  .services .conteiner p {
+      margin-top: -15px;
+      margin-left: 120px;
+      width: 219px;
+      height: 128px;
+      font-size: 12px;
+      line-height: 22px;
+      color: #767e9e;
+      font-weight: 400;
+      text-align: justify;
+  }
+  
+  .conteiner .conteiner_phone{
+      margin-top:-94px;
+  }
+  
+  .conteiner .conteiner_bulb {
+      margin-left:-20px;
+  }
+  
+  .conteiner .conteiner_heart h4 {
+      margin-left:121px;
+  }
+  
+  .conteiner .conteiner_bubble {
+      margin-left:-20px;
+      margin-top:-94px;
+  }
+  .conteiner .conteiner_heart{
+      margin-left:-19px;
+  } 
+  .conteiner .conteiner_star {
+      margin-top:-94px;
+      margin-left:-19px;
+  }
+  .conteiner .conteiner_star h4 {
+      margin-left:122px;
+  }
+  
+  
