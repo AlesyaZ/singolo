@@ -1,0 +1,175 @@
+@font-face {
+  font-family: Lato-Light;
+  src: url(..//assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url(..//assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url(..//assets/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: Lato-Black;
+  src: url(..//assets/fonts/Lato-Black.ttf);
+}
+
+body{
+	font-family:'Lato',sans-serif;
+	font-size: 10px;
+	margin:0px;
+	padding:0px;
+}
+
+.wrapper{
+	max-width:1020px;
+	margin:auto;
+	float:center;
+}
+
+.portfolio {
+	height: 864px;
+	background-color:#2d303a;
+	border-bottom:6px solid #323746; 
+	margin:0;
+	padding-left:40px;
+	text-align: left;
+}	
+
+.portfolio__name {
+	padding-top:39px;
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-weight: 900;
+	letter-spacing: -0.01rem;
+}
+.portfolio_p {
+	margin-top:-3px;
+	width: 940px;
+	height: 57px;
+	font-size: 18px;
+	line-height: 30px;
+	color: #767e9e;
+	font-weight: 300;
+}
+
+.portfolio__button{
+	display:flex;
+}
+
+.portfolio__button button {
+	margin-top:-16px;
+	font-family:'Lato',sans-serif;
+	border-radius: 5px;
+	border: 1px solid #666d89;
+	font-size: 12px;
+	line-height: 18px;
+	color: #767e9e;
+	font-weight: 400;
+	cursor: pointer;
+	margin-right: 10px;
+	background-color: transparent;
+}
+
+.portfolio__button .portfolio__button_active, button:hover {
+	border-color:#ffffff;
+	color: #ffffff;
+}
+
+.portfolio_conteiner {
+	display:flex;
+	flex-wrap:wrap;
+	height:620px;
+	overflow: hidden;
+}
+
+.portfolio_conteiner .portfolio_images{
+   	margin-top:19px;
+    	margin-right:20px;
+    	margin-bottom:1px;
+    	width: 220px;
+    	height: 187px;
+} 
+
+.About_Us {
+	height:728px;
+	background-color:#f2f2f2;
+	border-bottom:6px solid #ffffff; 
+	padding-left:40px;
+	text-align: left;
+}	
+
+.About__name {
+	padding-top:38px;
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-weight: 900;
+	letter-spacing: -0.01rem;
+}
+.About_p {
+	margin-top:-3px;
+	width: 940px;
+	height: 57px;
+	font-size: 18px;
+	line-height: 30px;
+	color: #767e9e;
+	font-weight: 300;
+}
+
+.About_p span {
+	letter-spacing: 0.0094rem;
+}
+.conteiner_About_Us {
+	display: flex;
+	justify-content: space-between;
+	padding-top:48px;
+	padding-right:37px;
+}
+.Desmond_Miles .about-us__photo{
+	margin-right:5px;
+}
+.conteiner_About_Us h4 {
+	font-size: 18px;
+	line-height: 18px;
+	color: #666d89;
+	font-weight: 900;
+	margin-left:-1px;
+	margin-top:15px;
+}
+
+.conteiner_About_Us p {
+	width: 303px;
+	height: 175px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #767e9e;
+	font-weight: 400;
+	margin-top:-14px;
+
+}
+
+.conteiner_About_Us p span {
+	letter-spacing: 0.009rem;
+}
+
+.Adam_Jensen p span{
+	letter-spacing: -0.003rem;;
+}
+.About_Us_socials  {
+    	margin-top:-122px;
+   	display:flex;
+    	justify-content:space-between;
+   	width: 153px;
+}
+
+.About_Us_socials :hover {
+	cursor: pointer;
+    	position: relative;
+   	bottom: 2px;
+}
