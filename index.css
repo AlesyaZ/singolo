@@ -76,7 +76,7 @@ header h1 span {
 
 .slider_btn_left {
 	width: 30px;
-    	height: 30px;	
+    height: 30px;	
 	margin:280px 0 0 36px;
 	border: none;
 	background: none;
@@ -127,7 +127,7 @@ header h1 span {
 
 .slider_btn_right {	
 	width: 30px;
-    	height: 30px;	
+    height: 30px;	
 	margin:280px 34px 0 0;
 	border: none;
 	background: none;
@@ -177,9 +177,7 @@ header h1 span {
 .services .conteiner {
  	display:flex;
 	flex-wrap: wrap;
-
-
-align-content: space-around;
+	align-content: space-around;
 }
 
 .services .conteiner h4 {
@@ -193,11 +191,11 @@ align-content: space-around;
 }
 
 .services .conteiner img {
-        display: flex;
-        justify-content: center;
-    	align-items: center;
-     	width: 61px;
-    	height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 61px;
+    height: 61px;
   	margin-top: 50px;
 	margin-left:40px;;
 }
@@ -300,10 +298,10 @@ align-content: space-around;
 
 .portfolio_conteiner .portfolio_images{
    	margin-top:19px;
-    	margin-right:20px;
-    	margin-bottom:1px;
-    	width: 220px;
-    	height: 187px;
+    margin-right:20px;
+    margin-bottom:1px;
+    width: 220px;
+    height: 187px;
 } 
 
 .About_Us {
@@ -372,15 +370,15 @@ align-content: space-around;
 	letter-spacing: -0.003rem;;
 }
 .About_Us_socials  {
-    	margin-top:-122px;
+    margin-top:-122px;
    	display:flex;
-    	justify-content:space-between;
+    justify-content:space-between;
    	width: 153px;
 }
 
 .About_Us_socials :hover {
 	cursor: pointer;
-    	position: relative;
+    position: relative;
    	bottom: 2px;
 }
 
@@ -418,14 +416,14 @@ align-content: space-around;
 
 
 .quote__info {
-    	display: flex;
-    	justify-content: space-between;
-    	margin-top:47px;
+    display: flex;
+    justify-content: space-between;
+    margin-top:47px;
 }
 
 .quote__info_input {
 	display: block;
-    	margin-bottom: 16px;
+    margin-bottom: 16px;
 	width: 619px;
 	height: 36px;
 	border: none;
@@ -444,17 +442,17 @@ align-content: space-around;
 
 .quote__info_textarea{
 	resize: none;
-    	height: 198px;
-    	width: 615px;
+    height: 198px;
+    width: 615px;
 }
 
 .btn {
-    	border: none;
-    	border-radius: 5px;
-    	font-size: 20px;
-    	background-color: #d6564f;
-    	color: #f48c8f;
-    	cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #d6564f;
+    color: #f48c8f;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -485,19 +483,19 @@ align-content: space-around;
 	color: #f0d8d9;
 	font-weight: 400;
 	margin-top: -9px;
-    	text-align: justify;
-    	letter-spacing: -0.002rem;
+    text-align: justify;
+    letter-spacing: -0.002rem;
 }
 
 .quote__contact_list { 
-    	list-style: none;
-    	padding-left:0px;
-    	margin-top:-78px;
+    list-style: none;
+    padding-left:0px;
+    margin-top:-78px;
 }
 
 .quote__contact_location_img {
-    	margin-left:3px;
-    	margin-top:5px;
+    margin-left:3px;
+    margin-top:5px;
 }
 
 .quote__contact_list a  {
@@ -507,7 +505,7 @@ align-content: space-around;
 }
 
 .quote__contact_list a:hover {
-    	text-decoration: underline;
+    text-decoration: underline;
 }
 
 footer {
@@ -517,8 +515,8 @@ footer {
 	padding-left:42px;
 	text-align: left;
    	display: flex;
-    	justify-content: space-between;
-    	align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer__copyright {
@@ -531,19 +529,14 @@ footer {
 
 .footer__Social {
    	display:flex;
-    	justify-content:space-between;
-   	width: 156px;
-   	padding-right:39px;
-}
-
-.footer__Social {
-   	display:flex;
-    	justify-content:space-between;
-   	width: 153px;
+    justify-content:space-between;
+	width: 153px;
+	padding-right:39px;
+   	margin-top:1px;
 }
 
 .footer__Social :hover {
 	cursor: pointer;
-    	position: relative;
+    position: relative;
    	bottom: 2px;
 }
