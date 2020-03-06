@@ -148,8 +148,12 @@ footer {
     	align-items: center;
 }
 
-.footer img {
-    	padding-top: 2px;
+.footer__copyright {
+	font-size: 12px;
+	line-height: 6px;
+	color: #666d89;
+	font-weight: 400;
+	letter-spacing: -0.01rem;
 }
 
 .footer__Social {
