@@ -210,6 +210,7 @@ header h1 span {
 	color: #767e9e;
 	font-weight: 400;
 	text-align: justify;
+	overflow: hidden;
 }
 
 .conteiner .conteiner_phone{
@@ -349,6 +350,9 @@ header h1 span {
 	font-weight: 900;
 	margin-left:-1px;
 	margin-top:15px;
+	white-space:nowrap;
+	overflow:hidden;
+	width: 300px;
 }
 
 .conteiner_About_Us p {
