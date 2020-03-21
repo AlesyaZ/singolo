@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Singolo</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="wrapper" id="wrapper">
 <!-- Start header -->
-<div class="wrapper">
-<header class="header">
+<header class="header" id="home">
 		<div class="header__logo"><h1>Singolo<span>*</span><h1></div>
-		<nav class="header__navigation">
-			<ul>
-				<li><a class="active" href="" title="Home">Home<span>·</span></a></li>
+		<nav class="header__navigation" id="menu_nav">
+			<ul id="menu">
+				<li><a href="#slider" class="active" title="Home">Home<span>·</span></a></li>
 				<li><a href="#services" title="Services">Services<span>·</span></a></li>
 				<li><a href="#portfolio" title="Portfolio">Portfolio<span>·</span></a></li>
 				<li><a href="#about" title="About">About<span>·</span></a></li>
@@ -23,25 +23,28 @@
 		</nav>
 </header>
 <!-- END header-->
-<!-- Start slider -->
-<section class="slider">
-		<button class="slider_btn_left"><a href=""><img src="assets/images/chev.png"><a></button>
-	
-		<div class="iphone_vertical">
-			<img src="assets/images/iPhone_vertical.png" alt="iphone" class="iphone_vertical_layer2"> 
-			<img src="assets/images/Shadow.png" alt="Shadow" class="iphone_vertical_layer1">
-		</div>
-		
-		<div class="iphone_horisontal">
-			<img src="assets/images/iPhone_horizontal.png" alt="iphone" class="iphone_horisontal_layer2">
-			<img src="assets/images/Shadow.png" alt="Shadow"  class="iphone_horisontal_layer1">
-		</div>
-		
-		<button class="slider_btn_right"><a href=""><img src="assets/images/chev_right.png"></a></button>
+<section class="slider" id="slider">
+	<div class="slide-container">
+	<div class="slider_1 slide active">
+				<img src="assets/images/iPhone_vertical.png"  id="ipnone_vert" alt="iphone" class="iphone_vertical_layer2 active"> 
+				<img src="assets/images/iPhone_Vertical_not_fon.png" alt="iphone" class="iphone_vertical_layer2 iphone_not_fon" id ="iphone_not_fon_vert">  
+				<img src="assets/images/Shadow.png" alt="Shadow" class="iphone_vertical_layer1">
+				<img src="assets/images/iPhone_horizontal.png" alt="iphone" class="iphone_horisontal_layer2 active">
+				<img src="assets/images/iPhone_Horizontal_not_fon.png" alt="iphone" class="iphone_horisontal_layer2 iphone_not_fon" id ="iphone_not_fon_hor">
+				<img src="assets/images/Shadow.png" alt="Shadow"  class="iphone_horisontal_layer1">
+	</div>
+	<div class="slider_2 slide">
+		<img src="assets/images/Slide-2.png" alt="Slide" class="slider-blue">
+	</div>
+	</div>
+	<div class="control">
+	<button class="control_left"><img src="assets/images/chev.png" ></button>
+	<button class="control_right"><img src="assets/images/chev_right.png"></button>
+	</div>
+
 </section>
-<!-- END slider-->
-<!-- Start services-->
-<section class="services">
+
+<section class="services" id="services">
 	<div class="services_our"><h4>Our Services</h4></div>
 	<div class="services_p"><p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor <span> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</span></p></div>
 		<div class="conteiner">
@@ -77,21 +80,19 @@
 			</div>
 		</div>
 </section>
-<!-- END services-->
 <!-- Start portfolio -->
-<div class="wrapper">
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="portfolio__name"><p>Portfolio<p></div>
 		<div class="portfolio_p"><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p></div>
 			
-		<div class="portfolio__button">
-			<button class="portfolio__button_active">All</button>
-			<button>Web Design</button>
-			<button>Graphic Design</button>
-			<button>Artwork</button>
+		<div class="portfolio__btn" id="portfolio_menu">
+			<button class="portfolio__button active">All</button>
+			<button class="portfolio__button">Web Design</button>
+			<button class="portfolio__button">Graphic Design</button>
+			<button class="portfolio__button">Artwork</button>
 		</div>
 		
-		<div class="portfolio_conteiner">
+		<div class="portfolio_conteiner" id="portfolio_conteiner">
 				<img src="assets/images/portfolio1.png" class="portfolio_images">
 				<img src="assets/images/portfolio2.png" class="portfolio_images">
 				<img src="assets/images/portfolio3.png" class="portfolio_images">
@@ -108,7 +109,7 @@
 	</section>
 <!-- END portfolio-->
 <!-- Start About Us -->
-	<section class="About_Us">
+	<section class="About_Us" id="about">
 		<div class="About__name"><p>About Us<p></div>
 		<div class="About_p"><p><span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p></div>
 		
@@ -174,19 +175,28 @@
 	</section>
 <!-- END About_Us-->
 <!-- Start get_a_quote-->
-	<section class="get_a_quote">
+	<section class="get_a_quote" id="contact">
 		<div class="get_a_quote__name"><p>Get a Quote<p></div>
 		<div class="get_a_quote_text"><p><span>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor</span> 
 		ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p></div>
 		
         <div class="quote__info">
-            <form class="quote__info_form" method="POST">
-                <input type="text" class ="quote__info_input" placeholder="Name (Required)" required>
-                <input type="email" class ="quote__info_input" placeholder="Email (Required)" required>
-                <input type="text" class ="quote__info_input" placeholder="Subject">
-                <textarea name="textarea" cols="30" rows="10" class="quote__info_input quote__info_textarea" placeholder="Describe your project in detail..."></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+            <form class="quote__info_form" id="form" method="POST"  >
+                <input id="name" type="text" class ="quote__info_input"   placeholder="Name (Required)" required>
+                <input id="email" type="email" class ="quote__info_input"  placeholder="Email (Required)" required>
+                <input type="text" class ="quote__info_input" id="subject"  placeholder="Subject">
+                <textarea id="textarea"type="text" name="textarea" cols="30" rows="10" class="quote__info_input quote__info_textarea" placeholder="Describe your project in detail..."></textarea>
+				<button type="submit" class="btn">SEND</button>
+			</form>
+			
+			<div id="massage-block" class="hidden">
+				<div id="massage">
+					<h3 class="massages_title">Письмо отправлено</h3>
+					<p id="theme" class="massages_text"></p>
+					<p id="description" class="massages_text"></p>
+ 					<button id="close-btn">OK</button>
+				</div>
+			</div>
 			 
 			<div class="quote__contact_information">
                <h3 class="quote__contact_information_name">Contact Information</h3>
@@ -229,10 +239,10 @@
                         </a>
                         <a href="#">
                             <img src="./assets/images/LinkedIn.png" alt="icon-twitter" class="About_Us_social_lk">    
-                        </a>
+						</a>
 		</div>
 	</footer>
 <!-- END footer-->
-</div>
+	<script src="script2.js"></script>
 </body>
 </html>
