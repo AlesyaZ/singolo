@@ -7,7 +7,7 @@ function onScroll(event) {
   const links = document.querySelectorAll('#menu a');
 
   sections.forEach((el) => {
-    if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+    if (el.offsetTop - 89 <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
        links.forEach((a) => {
         a.classList.remove('active');
         if (el.getAttribute('id') === a.getAttribute('href').substring(1)){
@@ -103,5 +103,27 @@ const changeImg  =  images.lastElementChild.after(images.firstElementChild);  //
 images.addEventListener('click', (eventa) => {
     images.querySelectorAll('img').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
+});
+
+
+//Get a quote
+const form = document.getElementById('form');
+const Block = document.getElementById('massage-block');
+const CloseBtn = document.getElementById('close-btn');
+const subject = document.getElementById('subject');
+const TextArea = document.getElementById('textarea');
+const THEME =  document.getElementById('theme');
+const DESCRIPTION = document.getElementById('description');
+
+form.addEventListener('submit', (el) => {
+    el.preventDefault();
+    Block.classList.remove('hidden');
+    THEME.innerText = subject.value ? 'Тема: ' + subject.value : 'Без темы';
+    DESCRIPTION.innerText = TextArea.value ? 'Описание: ' + TextArea.value : 'Без описания';
+})
+
+CloseBtn.addEventListener('click', () => {
+    Block.classList.add('hidden');
+    form.reset();
 });
 
