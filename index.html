@@ -2,19 +2,24 @@
 <html lange="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singolo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper" id="wrapper">
 <!-- Start header -->
+<div class="wrapper" id="wrapper">
 <header class="header" id="home">
-		<div class="header__logo"><h1>Singolo<span>*</span><h1></div>
-		<nav class="header__navigation" id="menu_nav">
+	<div class="nav hidden"></div>
+		<nav class="header__navigation" id="header__navigation">
+		<div class="header__logo">
+			<img id="menu-burger" class="nav-icon" src="assets\images\burger.svg" alt="burger_icon">
+			<h1>Singolo<span>*</span><h1>
+		</div>
+
 			<ul id="menu">
-				<li><a href="#slider" class="active" title="Home">Home<span>·</span></a></li>
+				<li><a href="#slider"  title="Home">Home<span>·</span></a></li>
 				<li><a href="#services" title="Services">Services<span>·</span></a></li>
 				<li><a href="#portfolio" title="Portfolio">Portfolio<span>·</span></a></li>
 				<li><a href="#about" title="About">About<span>·</span></a></li>
@@ -36,44 +41,43 @@
 	<div class="slider_2 slide">
 		<img src="assets/images/Slide-2.png" alt="Slide" class="slider-blue">
 	</div>
-	</div>
 	<div class="control">
-	<button class="control_left"><img src="assets/images/chev.png" ></button>
-	<button class="control_right"><img src="assets/images/chev_right.png"></button>
+		<button class="control_left"><img src="assets/images/chev.png" ></button>
+		<button class="control_right"><img src="assets/images/chev_right.png"></button>
+		</div>
 	</div>
-
 </section>
 
 <section class="services" id="services">
 	<div class="services_our"><h4>Our Services</h4></div>
 	<div class="services_p"><p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor <span> ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</span></p></div>
 		<div class="conteiner">
-			<div class="conteiner_pen">
+			<div class="services__conteiner conteiner_pen" >
 				<img src="assets/images/Pen.png" alt="pen" class="pen">
 				<h4>Custom Design</h4>
 				<p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
 			</div>
-			<div class="conteiner_bulb">
+			<div class="services__conteiner conteiner_bulb">
 				<img src="assets/images/Bulb.png" alt="bulb" class="bulb">
 				<h4>Inovative Ideas</h4>
 				<p>Quisque luctus, quam eget molestie com&shymodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
 			</div>
-			<div class="conteiner_heart">
+			<div class="services__conteiner conteiner_heart">
 				<img src="assets/images/Heart.png" alt="heart" class="heart">
 				<h4>Love Is The Answer</h4>
 				<p class="text_heart">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
 			</div>
-			<div class="conteiner_phone">
+			<div class="services__conteiner conteiner_phone">
 				<img src="assets/images/Phone.png" alt="phone" class="phone">
 				<h4 class="services_h4">Responsive Layout</h4>
 				<p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae&shysent elit leo.</p>
 			</div>
-			<div class="conteiner_bubble">
+			<div class="services__conteiner conteiner_bubble">
 				<img src="assets/images/Bubble.png" alt="bubble" class="bubble">
 				<h4 class="services_h4">24 / 7 Support</h4>
 				<p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen&shytesque egestas venenatis lorem.</p>
 			</div>
-			<div class="conteiner_star">
+			<div class="services__conteiner conteiner_star">
 				<img src="assets/images/Star.png" alt="star" class="star">
 				<h4 class="services_h4">Feel Like A Star</h4>
 				<p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
@@ -242,6 +246,7 @@
 						</a>
 		</div>
 	</footer>
+	</div>
 <!-- END footer-->
 	<script src="script.js"></script>
 </body>

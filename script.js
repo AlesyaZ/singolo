@@ -127,3 +127,11 @@ CloseBtn.addEventListener('click', () => {
     form.reset();
 });
 
+// Burger-menu
+
+const menuBurger = document.getElementById('header__navigation');
+menuBurger.addEventListener('click', () => {
+    menuBurger.classList.toggle('burger-active');
+   document.getElementById('menu-burger').classList.toggle('active');
+   document.querySelector('.nav').classList.toggle('hidden');
+});
