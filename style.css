@@ -851,6 +851,7 @@ footer {
 		width: 100vw;
 		height: 100vh;
 		left:0;
+		top:0;
 		background: #2d303a;
 		opacity: 0.5;
 	}
@@ -861,6 +862,7 @@ footer {
 		width: 258px;
 		position: fixed;
 		z-index: 5;
+		top:0;
 		left: 0;
 		padding-left: 20px;
 		background: #2d303a;
